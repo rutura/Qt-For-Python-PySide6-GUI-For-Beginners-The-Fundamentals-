@@ -1,0 +1,44 @@
+
+        . Deplyoying your pyside6 apps : 
+            . We choose to use pyinstaller because it works well on
+                    Windows,Linux,Mac.
+
+                . Install it :
+                    . Command :  pip3 install PyInstaller
+
+                . Use pyinstaller to generate a folder with all dependencies
+
+                . Steps : 
+                    . Browse to the folder containing the main.py file 
+                    . Run : pyinstaller main.py
+                        . This will generate a folder with all dependencies in a dist folder
+                        . in the dist folder, there'll be a main.exe file you can run
+                        . Double click on the file to see it run
+                . The app will also pop up a console window when run.
+                . A few things we'd like to change
+                    . stoping the console
+                    . Changing the name of the app,
+                    . ...
+                . To change some of those things, we can open the main.spec file and change     
+                    data in the exe = EXE(...) section
+                    . We change the name of the app to ModelViewApp
+                    . And stop the console window from popping up when we run our app
+                    
+                        .       name='ModelViewApp',
+                                debug=False,
+                                bootloader_ignore_signals=False,
+                                strip=False,
+                                upx=True,
+                                console=False,
+                                
+                . The .spec file instructs pyinstaller how to generate the executable
+                . We can pass it to pyinstaller to generate an exe with the new settings
+                    . Run command : pyinstaller main.spec
+                    . And a new executable will be generated
+                    
+                . This is just scratching the surface of pyinstaller    
+                        . You can learn more from 
+                            . the official docs : https://pyinstaller.org/en/stable/usage.html
+                            . Other things you can do include : 
+                                    . Adding app icons
+                                    . adding dependent files like resources,...

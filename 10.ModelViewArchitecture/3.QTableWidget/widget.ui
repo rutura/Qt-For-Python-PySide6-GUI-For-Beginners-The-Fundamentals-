@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>471</width>
+    <height>416</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <row>
+      <property name="text">
+       <string>One</string>
+      </property>
+     </row>
+     <row>
+      <property name="text">
+       <string>Two</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>2</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>The </string>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>sky</string>
+      </property>
+     </item>
+     <item row="1" column="0">
+      <property name="text">
+       <string>is</string>
+      </property>
+     </item>
+     <item row="1" column="1">
+      <property name="text">
+       <string>blue</string>
+      </property>
+     </item>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="list_items_button">
+     <property name="text">
+      <string>List Items</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="set_item_button">
+     <property name="text">
+      <string>Set Item</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

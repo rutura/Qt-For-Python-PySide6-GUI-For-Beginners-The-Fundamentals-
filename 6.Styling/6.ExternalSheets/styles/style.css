@@ -1,0 +1,35 @@
+
+QLineEdit{
+    padding : 1px;
+    border : 2px solid gray;
+    border-radius : 8px;
+    background-color : yellow;
+    height : 30px;
+}
+QWidget#Widget > QLabel {
+    font-weight : bold;
+    font-size : 20 px;
+}
+QPushButton[text="Profide info"] {
+    color : white;
+    background-color : gray;
+}
+QPushButton#ok_button {
+    color : white;
+    background-color : green;
+}
+QPushButton#cancel_button {
+    color : white;
+    background-color : red;
+}
+
+
+
+
+
+
+
+
+
+
+
